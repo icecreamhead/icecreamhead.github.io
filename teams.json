@@ -1,0 +1,600 @@
+{
+  "season": 2026,
+  "players": [
+    {
+      "name": "Grant Goddard",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Brighton",
+          "Chelsea",
+          "Leeds United"
+        ],
+        "eng.2": [
+          "Middlesbrough",
+          "Southampton",
+          "West Ham",
+          "Wolverhampton Wanderers"
+        ],
+        "eng.3": [
+          "Luton Town",
+          "Leicester City",
+          "Wycombe Wanderers",
+          "Sheffield Wednesday"
+        ],
+        "eng.4": [
+          "York City",
+          "Rochdale Town",
+          "Salford City",
+          "Bristol Rovers"
+        ],
+        "eng.5": [
+          "Carlisle United",
+          "Hartlepool United",
+          "Harrogate Town",
+          "Boreham Wood"
+        ]
+      }
+    },
+    {
+      "name": "Mark Beverley",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Chelsea",
+          "Everton",
+          "Tottenham Hotspur"
+        ],
+        "eng.2": [
+          "Birmingham City",
+          "Burnley",
+          "Sheffield United",
+          "West Ham"
+        ],
+        "eng.3": [
+          "Leicester City",
+          "Plymouth Argyle",
+          "Sheffield Wednesday",
+          "Stockport County"
+        ],
+        "eng.4": [
+          "Salford",
+          "Rotherham",
+          "Walsall",
+          "Swindon"
+        ],
+        "eng.5": [
+          "Carlisle",
+          "Southend",
+          "Forest Green",
+          "Harrogate "
+        ]
+      }
+    },
+    {
+      "name": "Gary Cooke",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Chelsea",
+          "Leeds United",
+          "Tottenham Hotspur"
+        ],
+        "eng.2": [
+          "West Ham",
+          "Wolverhampton Wanderers",
+          "Middlesbrough",
+          "Southampton"
+        ],
+        "eng.3": [
+          "Luton",
+          "Leicester City",
+          "Plymouth Argyle",
+          "Oxford"
+        ],
+        "eng.4": [
+          "Salford",
+          "York",
+          "Rotherham",
+          "Grimsby"
+        ],
+        "eng.5": [
+          "Carlisle",
+          "Hartlepool",
+          "Barrow",
+          "Southend"
+        ]
+      }
+    },
+    {
+      "name": "Josh Cooke",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Bournemouth",
+          "Chelsea",
+          "Tottenham Hotspur"
+        ],
+        "eng.2": [
+          "West Ham",
+          "Southampton",
+          "Wolverhampton Wanderers",
+          "Wrexham"
+        ],
+        "eng.3": [
+          "Leicester City",
+          "Sheffield Wednesday",
+          "Stevenage",
+          "Stockport County"
+        ],
+        "eng.4": [
+          "Salford",
+          "Grimsby",
+          "Rotherham",
+          "Northampton"
+        ],
+        "eng.5": [
+          "Harrogate ",
+          "Barrow",
+          "Carlisle",
+          "Boreham Wood"
+        ]
+      }
+    },
+    {
+      "name": "Ben Jones/ Steven Haigh",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Brentford",
+          "Newcastle",
+          "Sunderland"
+        ],
+        "eng.2": [
+          "Burnley",
+          "West Ham",
+          "Wolverhampton Wanderers",
+          "Middlesbrough"
+        ],
+        "eng.3": [
+          "Leicester City",
+          "Plymouth Argyle",
+          "Sheffield Wednesday",
+          "Barnsley"
+        ],
+        "eng.4": [
+          "Chesterfield",
+          "Rotherham",
+          "Barnet",
+          "Port Vale"
+        ],
+        "eng.5": [
+          "AFC Fylde",
+          "Carlisle",
+          "Barrow",
+          "Boston United"
+        ]
+      }
+    },
+    {
+      "name": "Ryan Fowler",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Bournemouth",
+          "Brighton",
+          "Fulham"
+        ],
+        "eng.2": [
+          "Southampton",
+          "Burnley",
+          "West Ham",
+          "Wrexham"
+        ],
+        "eng.3": [
+          "Leicester City",
+          "Plymouth Argyle",
+          "Luton",
+          "Sheffield Wednesday"
+        ],
+        "eng.4": [
+          "Port Vale",
+          "Rotherham",
+          "Salford",
+          "Chesterfield"
+        ],
+        "eng.5": [
+          "Hartlepool",
+          "Boreham Wood",
+          "Carlisle",
+          "Scunthorpe"
+        ]
+      }
+    },
+    {
+      "name": "Steve Beeby",
+      "picks": {
+        "eng.1": [
+          "Brighton",
+          "Chelsea",
+          "Everton",
+          "Tottenham Hotspur"
+        ],
+        "eng.2": [
+          "Wolverhampton Wanderers",
+          "West Ham",
+          "Southampton",
+          "Norwich"
+        ],
+        "eng.3": [
+          "Leicester City",
+          "Sheffield Wednesday",
+          "Huddersfield",
+          "Luton"
+        ],
+        "eng.4": [
+          "Bristol Rovers",
+          "Salford",
+          "Rotherham",
+          "Exeter"
+        ],
+        "eng.5": [
+          "Carlisle",
+          "Boreham Wood",
+          "Southend",
+          "Forest Green"
+        ]
+      }
+    },
+    {
+      "name": "Ryan Cardwell",
+      "picks": {
+        "eng.1": [
+          "Crystal Palace ",
+          "Newcastle",
+          "Nottingham Forest",
+          "Tottenham Hotspur"
+        ],
+        "eng.2": [
+          "Sheffield United",
+          "Watford",
+          "Birmingham City",
+          "Southampton"
+        ],
+        "eng.3": [
+          "Leicester City",
+          "Sheffield Wednesday",
+          "Reading",
+          "Barnsley"
+        ],
+        "eng.4": [
+          "Grimsby",
+          "Walsall",
+          "Port Vale",
+          "Swindon"
+        ],
+        "eng.5": [
+          "Scunthorpe",
+          "Yeovil",
+          "Carlisle",
+          "Barrow"
+        ]
+      }
+    },
+    {
+      "name": "Aden McNally",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Brentford",
+          "Chelsea",
+          "Tottenham Hotspur"
+        ],
+        "eng.2": [
+          "West Ham",
+          "Burnley",
+          "Wrexham",
+          "Sheffield United"
+        ],
+        "eng.3": [
+          "Sheffield Wednesday",
+          "Leicester City",
+          "Reading",
+          "Barnsley"
+        ],
+        "eng.4": [
+          "Rotherham",
+          "Salford",
+          "York",
+          "Rochdale"
+        ],
+        "eng.5": [
+          "Yeovil",
+          "Forest Green",
+          "Halifax",
+          "Scunthorpe"
+        ]
+      }
+    },
+    {
+      "name": "Blue Hargate",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Chelsea",
+          "Bournemouth",
+          "Tottenham Hotspur"
+        ],
+        "eng.2": [
+          "Sheffield United",
+          "Norwich",
+          "West Ham",
+          "Derby"
+        ],
+        "eng.3": [
+          "Huddersfield",
+          "Plymouth Argyle",
+          "Leicester City",
+          "Luton"
+        ],
+        "eng.4": [
+          "Chesterfield",
+          "York",
+          "Port Vale",
+          "Salford"
+        ],
+        "eng.5": [
+          "Hartlepool",
+          "Scunthorpe",
+          "Southend",
+          "Harrogate "
+        ]
+      }
+    },
+    {
+      "name": "Russell Bown",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Bournemouth",
+          "Chelsea",
+          "Sunderland"
+        ],
+        "eng.2": [
+          "Millwall",
+          "West Ham",
+          "Southampton",
+          "Wolverhampton Wanderers"
+        ],
+        "eng.3": [
+          "Leicester City",
+          "Sheffield Wednesday",
+          "Bradford",
+          "Stockport County"
+        ],
+        "eng.4": [
+          "Salford",
+          "Chesterfield",
+          "Bristol Rovers",
+          "Grimsby"
+        ],
+        "eng.5": [
+          "Carlisle",
+          "Boreham Wood",
+          "Hartlepool",
+          "Harrogate "
+        ]
+      }
+    },
+    {
+      "name": "Lee Mansell",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Bournemouth",
+          "Chelsea",
+          "Tottenham Hotspur"
+        ],
+        "eng.2": [
+          "Burnley",
+          "Norwich",
+          "West Ham",
+          "Wolverhampton Wanderers"
+        ],
+        "eng.3": [
+          "Leicester City",
+          "Luton",
+          "Milton Keynes Dons",
+          "Stockport County"
+        ],
+        "eng.4": [
+          "Rotherham",
+          "Chesterfield",
+          "Walsall",
+          "Rochdale"
+        ],
+        "eng.5": [
+          "Carlisle",
+          "Southend",
+          "Boreham Wood",
+          "Scunthorpe"
+        ]
+      }
+    },
+    {
+      "name": "Phil Calzagi",
+      "picks": {
+        "eng.1": [
+          "Chelsea",
+          "Aston Villa",
+          "Tottenham Hotspur",
+          "Nottingham Forest"
+        ],
+        "eng.2": [
+          "West Ham",
+          "Wolverhampton Wanderers",
+          "Southampton",
+          "Burnley"
+        ],
+        "eng.3": [
+          "Sheffield Wednesday",
+          "Stockport County",
+          "Leicester City",
+          "Milton Keynes Dons"
+        ],
+        "eng.4": [
+          "Bristol Rovers",
+          "Chesterfield",
+          "Salford",
+          "Grimsby"
+        ],
+        "eng.5": [
+          "Carlisle",
+          "Harrogate ",
+          "Boreham Wood",
+          "Hartlepool"
+        ]
+      }
+    },
+    {
+      "name": "Chris Storey",
+      "picks": {
+        "eng.1": [
+          "Chelsea",
+          "Aston Villa",
+          "Tottenham Hotspur",
+          "Bournemouth"
+        ],
+        "eng.2": [
+          "West Ham",
+          "Wolverhampton Wanderers",
+          "Burnley",
+          "Middlesbrough"
+        ],
+        "eng.3": [
+          "Stockport County",
+          "Bradford",
+          "Leicester City",
+          "Sheffield Wednesday"
+        ],
+        "eng.4": [
+          "Chesterfield",
+          "Grimsby",
+          "Salford",
+          "Exeter"
+        ],
+        "eng.5": [
+          "Carlisle",
+          "Boreham Wood",
+          "Harrogate ",
+          "Barrow"
+        ]
+      }
+    },
+    {
+      "name": "Dave Hoggarth",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Chelsea",
+          "Nottingham Forest",
+          "Tottenham Hotspur"
+        ],
+        "eng.2": [
+          "Burnley",
+          "Middlesbrough",
+          "West Ham",
+          "Wolverhampton Wanderers"
+        ],
+        "eng.3": [
+          "Leicester City",
+          "Luton",
+          "Sheffield Wednesday",
+          "Stockport County"
+        ],
+        "eng.4": [
+          "Bristol Rovers",
+          "Chesterfield",
+          "Rotherham",
+          "Salford"
+        ],
+        "eng.5": [
+          "Carlisle",
+          "Hartlepool",
+          "Harrogate ",
+          "Southend"
+        ]
+      }
+    },
+    {
+      "name": "Lewis Goddard",
+      "picks": {
+        "eng.1": [
+          "Aston Villa",
+          "Chelsea",
+          "Everton",
+          "Tottenham Hotspur"
+        ],
+        "eng.2": [
+          "Burnley",
+          "Middlesbrough",
+          "West Ham",
+          "Wolverhampton Wanderers"
+        ],
+        "eng.3": [
+          "Huddersfield",
+          "Leicester City",
+          "Luton",
+          "Sheffield Wednesday"
+        ],
+        "eng.4": [
+          "Bristol Rovers",
+          "Grimsby",
+          "Rotherham",
+          "Salford"
+        ],
+        "eng.5": [
+          "Barrow",
+          "Carlisle",
+          "Hartlepool",
+          "Harrogate "
+        ]
+      }
+    },
+    {
+      "name": "Keith Fieldsend",
+      "picks": {
+        "eng.1": [
+          "Chelsea",
+          "Tottenham Hotspur",
+          "Nottingham Forest",
+          "Leeds United"
+        ],
+        "eng.2": [
+          "West Ham",
+          "Sheffield United",
+          "Southampton",
+          "Burnley"
+        ],
+        "eng.3": [
+          "Milton Keynes Dons",
+          "Leicester City",
+          "Sheffield Wednesday",
+          "Huddersfield"
+        ],
+        "eng.4": [
+          "Rotherham",
+          "Salford",
+          "Gillingham",
+          "Chesterfield"
+        ],
+        "eng.5": [
+          "Boston United",
+          "Scunthorpe",
+          "Hartlepool",
+          "Harrogate "
+        ]
+      }
+    }
+  ]
+}
