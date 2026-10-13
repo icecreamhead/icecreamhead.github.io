@@ -85,7 +85,7 @@
       margin:0 0 4px;
       color:var(--paper);
     }
-    .block .sub{
+    .block {
       font-size:13px;
       color:var(--paper-dim);
       margin:0 0 16px;
@@ -173,24 +173,19 @@
 <div class="wrap">
 
   <div class="masthead">
-    <h1>Doorpac <span class="rule">Derby</span></h1>
-    <div class="masthead-right" id="seasonBadge">Season —</div>
+    <h1>Doorpac Derby <span class="rule" id="headerBadge"></span></h1>
+    <div class="masthead-right" id="seasonBadge" style="visibility: hidden"></div>
   </div>
-  <p class="strap">Four clubs from each division.<br>Add up the league positions.<br>Lowest score wins.</p>
+  <p class="strap">Four clubs from each division. Add up the league positions. Lowest score wins.</p>
 
   <div class="block">
     <div class="control-bar">
       <h2 style="margin:0;">Standings</h2>
       <button class="btn" id="refreshBtn" style="visibility: hidden">Refresh standings</button>
     </div>
-<!--    <p class="sub" id="boardSub"></p>-->
     <div id="boardArea"></div>
     <div class="status-line" id="refreshStatus"></div>
   </div>
-
-  <footer>
-    Live standings from <a href="https://worldcup26.ir/football-api" target="_blank">worldcup26.ir</a>, a free independent football API. Player picks are loaded from <code>teams.json</code>, bundled alongside this file; edit that file to add players or update picks.
-  </footer>
 </div>
 
 <script type="application/json" id="playersFallback">{"season":2026,"players":[]}</script>
@@ -253,16 +248,12 @@
       return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
     }
     function setStatus(el, kind, msg){
-      el.className = "status-line show status-"+kind;
+      //el.className = "status-line show status-"+kind;
       el.textContent = msg;
     }
     function clearStatus(el){
       el.className = "status-line";
       el.textContent = "";
-    }
-    function ordinal(n){
-      const s=["th","st","nd","rd"], v=n%100;
-      return n+(s[(v-20)%10]||s[v]||s[0]);
     }
 
     // ---------- fetch standings from worldcup26.ir ----------
@@ -336,15 +327,13 @@
       if(!entries || !entries.length){
         throw new Error("No standings for season "+state.season);
       }
-      const teams = entries.map((entry, i)=>{
+      return  entries.map((entry, i)=>{
         const team = readTeam(entry);
         return { id: team.id, name: team.name, rank: readRank(entry, i), points: readPoints(entry) };
       }).sort((a,b)=>a.rank-b.rank);
-      return teams;
     }
 
     async function refreshAllDivisions(statusEl){
-      const startTime = Date.now();
       let succeeded = 0;
       setStatus(statusEl, "info", "Refreshing 5 divisions…");
       for(const div of DIVISIONS){
@@ -393,6 +382,7 @@
 
     function renderSeasonBadge(){
       $("#seasonBadge").textContent = "Season "+state.season+"/"+String((parseInt(state.season,10)+1)).slice(-2);
+      $("#headerBadge").textContent = state.season + "/" + String((parseInt(state.season,10)+1)).slice(-2);
     }
 
     function renderBoard(){
