@@ -33,7 +33,7 @@
       line-height:1.45;
     }
 
-    .wrap{max-width:920px;margin:0 auto;padding:28px 20px 80px;}
+    .wrap{max-width:1200px;margin:0 auto;padding:28px 20px 80px;}
 
     /* ---------- Masthead ---------- */
     .masthead{
@@ -139,7 +139,6 @@
     }
     .lb-row.lead .lb-rank{color:var(--gold);}
     .lb-name{font-weight:600; font-size:15px;}
-    .lb-count{font-family:'Inter',sans-serif; font-weight:500; font-size:11px; color:var(--paper-dim); margin-left:6px;}
     .lb-breakdown{font-size:12px; color:var(--paper-dim); margin-top:3px;}
     .lb-total{
       font-family:'Bebas Neue',sans-serif;
@@ -160,14 +159,79 @@
       flex-wrap:wrap;
     }
 
-    footer{
-      margin-top:40px;
-      font-size:12px;
-      color:var(--paper-dim);
-      border-top:1px solid var(--line);
-      padding-top:14px;
+    /* ---------- Desktop: picks always visible, no toggle button ---------- */
+    .lb-breakdown table{
+      width:100%;
+      font-size:13px;
     }
-    footer a{color:var(--gold);}
+    .lb-breakdown td{
+      padding:4px 6px;
+      border-bottom:1px solid rgba(255,255,255,0.03);
+      width: 20%;
+    }
+    .toggle-picks{
+      display:none;
+    }
+
+    /* ---------- Mobile optimizations ---------- */
+    @media(max-width:640px){
+      .wrap{padding:16px 12px 60px;}
+      .masthead{gap:8px; margin-bottom:4px;}
+      .masthead h1{font-size:clamp(28px,6vw,48px);}
+      .strap{font-size:13px; margin:6px 0 18px;}
+      .block{padding:16px; margin-bottom:14px;}
+      .block h2{font-size:18px; margin-bottom:2px;}
+
+      .control-bar{gap:8px;}
+
+      .lb-row{
+        grid-template-columns:28px 1fr auto;
+        gap:8px;
+        padding:10px 4px;
+      }
+      .lb-rank{font-size:18px;}
+      .lb-name{font-size:14px;}
+      .lb-total{font-size:20px; min-width:48px;}
+
+      /* Hide picks by default on mobile */
+      .lb-breakdown{
+        display:none;
+        margin-top:6px;
+      }
+      .lb-breakdown.expanded{
+        display:block;
+        overflow-x:auto;
+      }
+      .lb-breakdown table{font-size:12px;}
+      .lb-breakdown td{
+        padding:3px 4px;
+        display: inline-grid;
+      }
+
+      /* Show toggle button on mobile only */
+      .toggle-picks{
+        display:inline-block;
+        font-family:'Inter',sans-serif;
+        font-weight:500;
+        font-size:11px;
+        background:none;
+        border:1px solid var(--line);
+        color:var(--paper-dim);
+        padding:4px 8px;
+        border-radius:var(--radius);
+        cursor:pointer;
+        margin-top:6px;
+        transition:all 0.2s;
+      }
+      .toggle-picks:active{
+        border-color:var(--gold);
+        color:var(--gold);
+      }
+
+      .btn{padding:7px 12px; font-size:12px;}
+
+      footer{font-size:11px; margin-top:30px; padding-top:10px;}
+    }
   </style>
 </head>
 <body>
@@ -419,18 +483,31 @@
         <div class="lb-rank">${i+1}</div>
         <div>
           <div class="lb-name">${esc(s.name)}</div>
-          <div class="lb-breakdown">
-            <table style="width: 100%">
+          <div class="lb-breakdown" data-breakdown="${esc(s.name)}">
+            <table>
               ${
-                [0,4,8,12,16,1,5,9,13,17,2,6,10,14,18,3,7,11,15,19].map(i =>
-                    (i < 4 ? '<tr>' : '') + '<td style="">' + s.parts[i][0] + '<span style="float: right; font-weight: bold">' + s.parts[i][1] + '</span></td>' + (i > 15 ? '</tr>' : '')
-                ).join('')
-              }
+              [0,4,8,12,16,1,5,9,13,17,2,6,10,14,18,3,7,11,15,19].map(i =>
+                      (i < 4 ? '<tr>' : '') + '<td>' + esc(s.parts[i][0]) + '<span style="float: right; font-weight: bold">' + s.parts[i][1] + '</span></td>' + (i > 15 ? '</tr>' : '')
+              ).join('')
+      }
             </table>
           </div>
+          <button class="toggle-picks" data-toggle="${esc(s.name)}">Show picks</button>
         </div>
         <div class="lb-total">${s.complete ? s.total : "—"}<span class="unit">${s.complete ? "pts":"incomplete"}</span></div>
       </div>`).join("");
+
+      // Attach toggle listeners
+      $$(".toggle-picks").forEach(btn=>{
+        btn.addEventListener("click", ()=>{
+          const playerName = btn.dataset.toggle;
+          const breakdown = document.querySelector(`[data-breakdown="${playerName}"]`);
+          if(breakdown){
+            breakdown.classList.toggle("expanded");
+            btn.textContent = breakdown.classList.contains("expanded") ? "Hide picks" : "Show picks";
+          }
+        });
+      });
     }
 
     // ---------- init & auto-refresh on load ----------
